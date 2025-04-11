@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "cooper hewit";
+    src: url(fonts/cooperhewitt-medium-webfont.woff2) format(woff2),
+    url(fonts/cooperhewitt-medium-webfont.woff) format(woff);
+}
+
+body{
+    font-family: "cooper hewit";
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar{
+    width: 33%;
+    height: 100vh;
+    background-image: url(../signUpForm/images/image.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    background-image: url(../signUpForm/images/odin-lined.png) ;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    color: white;
+    background-color: black ;
+    opacity: 0.7;
+    position: absolute;
+    top: 200px;
+}
+
+.logo-title{
+    font-size: 4.7rem;
+    margin-left: 30px;
+}
+
+.credits{
+    align-self: flex-end;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+a{
+    color:rgb(24, 175, 24) ;
+}
+
+.form-container{
+    width: 67%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-title{
+    margin-top: 70px;
+    color: black;
+    font-size: 1.7rem;
+    padding: 0 130px;
+}
+
+.second-title{
+    padding: 0 130px;
+    font-size: 1.7rem;
+}
+
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex: 50%;
+    padding: 0 130px;
+    box-shadow: 2px 2px 2px 2px rgb(207, 203, 203);
+}
+
+
+
+
+.information>div{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    margin: 20px 0;
+}
+
+h2{
+    flex-basis: 100%;
+}
+input{
+    appearance: none;
+    width: 180px;
+    height: 30px;
+    font-size: 1rem;
+    padding: 0 3px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+label{
+    font-size: 0.9rem;
+    color: grey;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+}
+
+input:hover{
+    border: 1px solid blue;
+}
+
+input[type="password"]:invalid{
+    border: 1px solid red;
+}
+
+button{
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 180px;
+    height: 50px;
+    background-color: rgb(24, 175, 24);
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: white;
+}
+
+p{
+    margin-top: 30px;
+    margin-left: 40px;
+}
